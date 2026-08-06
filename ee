@@ -1,1 +1,5 @@
-print("hellow world")
+<img
+  src="/images/banner.jpg"
+  alt="웹사이트 배너"
+  width="800"
+/>
