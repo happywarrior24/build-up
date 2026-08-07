@@ -3,7 +3,7 @@
    ================================================================ */
 :root {
   --color-ink: #10120f;
-  --color-paper: #f2f2ec;
+  --color-paper: #ffffff;
   --color-lime: #d8ff38;
   --color-blue: #2957ff;
   --color-line: rgb(16 18 15 / 17%);
@@ -85,7 +85,7 @@ section {
 }
 .site-header.is-scrolled {
   border-bottom: 1px solid var(--color-line);
-  background: rgb(242 242 236 / 88%);
+  background: rgb(255 255 255 / 88%);
   backdrop-filter: blur(14px);
 
 }
@@ -151,8 +151,9 @@ section {
   position: relative;
   display: flex;
   min-height: 100svh;
-  align-items: flex-end;
-  padding: 130px 0 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
 
 }
 .eyebrow {
@@ -220,8 +221,9 @@ section {
 .marquee {
   overflow: hidden;
   padding-block: 17px;
-  background: var(--color-ink);
-  color: white;
+  border-block: 1px solid var(--color-line);
+  background: white;
+  color: var(--color-ink);
   white-space: nowrap;
 
 }
@@ -242,7 +244,7 @@ section {
    5. Team introduction
    ================================================================ */
 .intro {
-  background: var(--color-lime);
+  background: white;
 
 }
 .intro-grid {
@@ -327,16 +329,17 @@ section {
    6. Technology stack
    ================================================================ */
 .build {
-  background: var(--color-ink);
-  color: white;
+  background: white;
+  color: var(--color-ink);
 
 }
 .build .section-heading {
-  padding-bottom: 65px;
-  border-bottom: 1px solid #3c3d39;
+  padding-bottom: 0;
+  border-bottom: 0;
 
 }
 .layers {
+  border-top: 1px solid var(--color-line);
   counter-reset: layer;
 
 }
@@ -346,7 +349,7 @@ section {
   align-items: center;
   gap: 28px;
   padding-block: 34px;
-  border-bottom: 1px solid #3c3d39;
+  border-bottom: 1px solid var(--color-line);
   counter-increment: layer;
   transition: 0.35s;
 
@@ -366,7 +369,7 @@ section {
 }
 .layer p {
   max-width: 520px;
-  color: #a9aaa5;
+  color: #5f625b;
   line-height: 1.75;
 
 }
@@ -458,8 +461,8 @@ section {
    8. Vision and footer
    ================================================================ */
 .vision {
-  background: var(--color-blue);
-  color: white;
+  background: white;
+  color: var(--color-ink);
 
 }
 .vision-grid {
@@ -496,7 +499,7 @@ section {
 }
 .pills span {
   padding: 12px 18px;
-  border: 1px solid rgb(255 255 255 / 55%);
+  border: 1px solid var(--color-line);
   border-radius: 50px;
   font: 600 12px var(--font-display);
 
@@ -504,8 +507,9 @@ section {
 
 .site-footer {
   padding: 80px 0 35px;
-  background: var(--color-ink);
-  color: white;
+  border-top: 1px solid var(--color-line);
+  background: white;
+  color: var(--color-ink);
 
 }
 .footer-heading {
@@ -542,8 +546,8 @@ section {
   display: flex;
   justify-content: space-between;
   padding-top: 22px;
-  border-top: 1px solid #3c3d39;
-  color: #979993;
+  border-top: 1px solid var(--color-line);
+  color: #666861;
   font: 500 11px var(--font-display);
   letter-spacing: 0.1em;
 
@@ -614,7 +618,7 @@ section {
 
 }
   .hero {
-  padding-top: 115px;
+  padding: 80px 0;
 
 }
   .hero h1 {
