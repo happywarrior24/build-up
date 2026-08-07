@@ -3,7 +3,7 @@
    ================================================================ */
 :root {
   --color-ink: #10120f;
-  --color-paper: #ffffff;
+  --color-paper: #f2f2ec;
   --color-lime: #d8ff38;
   --color-blue: #2957ff;
   --color-line: rgb(16 18 15 / 17%);
@@ -85,7 +85,7 @@ section {
 }
 .site-header.is-scrolled {
   border-bottom: 1px solid var(--color-line);
-  background: rgb(255 255 255 / 88%);
+  background: rgb(242 242 236 / 88%);
   backdrop-filter: blur(14px);
 
 }
@@ -151,8 +151,8 @@ section {
   position: relative;
   display: flex;
   min-height: 100svh;
-  align-items: center;
-  padding: 80px 0;
+  align-items: flex-end;
+  padding: 130px 0 34px;
 
 }
 .eyebrow {
@@ -220,9 +220,8 @@ section {
 .marquee {
   overflow: hidden;
   padding-block: 17px;
-  border-block: 1px solid var(--color-line);
-  background: white;
-  color: var(--color-ink);
+  background: var(--color-ink);
+  color: white;
   white-space: nowrap;
 
 }
@@ -243,7 +242,7 @@ section {
    5. Team introduction
    ================================================================ */
 .intro {
-  background: white;
+  background: var(--color-lime);
 
 }
 .intro-grid {
@@ -328,13 +327,13 @@ section {
    6. Technology stack
    ================================================================ */
 .build {
-  background: white;
-  color: var(--color-ink);
+  background: var(--color-ink);
+  color: white;
 
 }
 .build .section-heading {
   padding-bottom: 65px;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 1px solid #3c3d39;
 
 }
 .layers {
@@ -347,7 +346,7 @@ section {
   align-items: center;
   gap: 28px;
   padding-block: 34px;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 1px solid #3c3d39;
   counter-increment: layer;
   transition: 0.35s;
 
@@ -367,7 +366,7 @@ section {
 }
 .layer p {
   max-width: 520px;
-  color: #5f625b;
+  color: #a9aaa5;
   line-height: 1.75;
 
 }
@@ -459,8 +458,8 @@ section {
    8. Vision and footer
    ================================================================ */
 .vision {
-  background: white;
-  color: var(--color-ink);
+  background: var(--color-blue);
+  color: white;
 
 }
 .vision-grid {
@@ -497,7 +496,7 @@ section {
 }
 .pills span {
   padding: 12px 18px;
-  border: 1px solid var(--color-line);
+  border: 1px solid rgb(255 255 255 / 55%);
   border-radius: 50px;
   font: 600 12px var(--font-display);
 
@@ -505,9 +504,8 @@ section {
 
 .site-footer {
   padding: 80px 0 35px;
-  border-top: 1px solid var(--color-line);
-  background: white;
-  color: var(--color-ink);
+  background: var(--color-ink);
+  color: white;
 
 }
 .footer-heading {
@@ -544,8 +542,8 @@ section {
   display: flex;
   justify-content: space-between;
   padding-top: 22px;
-  border-top: 1px solid var(--color-line);
-  color: #666861;
+  border-top: 1px solid #3c3d39;
+  color: #979993;
   font: 500 11px var(--font-display);
   letter-spacing: 0.1em;
 
@@ -616,7 +614,7 @@ section {
 
 }
   .hero {
-  padding: 80px 0;
+  padding-top: 115px;
 
 }
   .hero h1 {
