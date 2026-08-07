@@ -268,15 +268,20 @@ section {
 }
 .orbit {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 70%;
   aspect-ratio: 1;
   border: 1px solid rgb(16 18 15 / 35%);
   border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
   animation: orbit-spin 14s linear infinite;
 
 }
 .orbit::before, .orbit::after {
   position: absolute;
+  top: 50%;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -285,13 +290,13 @@ section {
 
 }
 .orbit::before {
-  top: 8%;
-  left: 18%;
+  left: 0;
+  transform: translate(-50%, -50%);
 
 }
 .orbit::after {
-  right: 14%;
-  bottom: 10%;
+  right: 0;
+  transform: translate(50%, -50%);
 
 }
 .intro-wordmark {
@@ -577,7 +582,7 @@ section {
 }
 @keyframes orbit-spin {
   to {
-  transform: rotate(360deg);
+  transform: translate(-50%, -50%) rotate(360deg);
 
 }
 }
