@@ -175,15 +175,17 @@ section {
 }
 .hero h1 {
   margin: 32px 0 26px;
-  font: 800 clamp(62px, 12vw, 180px)/0.79 var(--font-display);
+  max-width: 100%;
+  font: 800 clamp(58px, 10.5vw, 160px)/0.79 var(--font-display);
   letter-spacing: -0.075em;
   text-transform: uppercase;
 
 }
 .hero h1 span {
   display: block;
-  margin-left: 17vw;
+  margin-left: min(12vw, 180px);
   color: var(--color-blue);
+  white-space: nowrap;
 
 }
 .hero-bottom {
